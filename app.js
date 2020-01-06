@@ -72,7 +72,7 @@ function handleCM(event) {
 }
 
 function handleSaveClick(event) {
-    const image = canvas.toDataURL("image/jpeg");
+    const image = canvas.toDataURL();
     const link = document.createElement("a");
     link.href = image;
     link.download = "Paint[EXPORT]";
@@ -98,6 +98,6 @@ if (mode) {
     mode.addEventListener("click", handleModeClick);
 }
 
-if (sava) {
+if (save) {
     save.addEventListener("click", handleSaveClick);
 }
